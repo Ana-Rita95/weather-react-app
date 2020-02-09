@@ -6,7 +6,7 @@ import CurrentWeather from "./CurrentWeather";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <div className="wrapper">
         <Header />
         <DayInfo />
