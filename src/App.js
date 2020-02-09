@@ -1,14 +1,17 @@
 import React from "react";
 import "./App.css";
+import Header from "./Header";
+import DayInfo from "./DayInfo";
+import CurrentWeather from "./CurrentWeather";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-      </header>
+      <div className="wrapper">
+        <Header />
+        <DayInfo />
+        <CurrentWeather />
+      </div>
     </div>
   );
 }
-
-export default App;

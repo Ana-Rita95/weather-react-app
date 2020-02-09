@@ -12,11 +12,11 @@ export default function CurrentWeather() {
         <div className="col-1 currentTemperature float-left">15</div>
         <div className="col-3 temperatureUnit float-left">
           <span className="temperatureUnit">
-            <a href="#" className="active">
+            <a href="/" className="active">
               {" "}
               ºC
             </a>
-            |<a href="#">ºF</a>
+            |<a href="/">ºF</a>
           </span>
         </div>
         <WeatherDetail />
