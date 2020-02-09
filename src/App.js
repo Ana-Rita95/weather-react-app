@@ -17,6 +17,7 @@ export default function App() {
         <a
           href="https://github.com/Ana-Rita95/weather-react-app"
           target="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           Ana Rita Silva
