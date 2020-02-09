@@ -1,0 +1,14 @@
+.input-group {
+  margin: 10px 0px;
+}
+.btn-outline-secondary {
+  border: 1px solid #ced4da;
+}
+
+.btn-outline-secondary:hover {
+  background: #fff;
+}
+
+.fa-search {
+  color: grey;
+}
