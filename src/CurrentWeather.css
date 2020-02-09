@@ -1,0 +1,31 @@
+.currentWeather {
+  margin: 20px 0px;
+}
+
+.currentTemperature {
+  font-size: 38px;
+  padding: 10px;
+  line-height: 1;
+}
+
+.temperatureUnit {
+  font-size: 14px;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.temperatureUnit .active {
+  color: #000;
+  cursor: default;
+}
+
+.temperatureUnit .active:hover {
+  text-decoration: none;
+}
+
+.fa-wind {
+  font-size: 38px;
+  padding: 10px;
+  color: #aaabac;
+}
