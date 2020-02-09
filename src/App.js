@@ -12,6 +12,16 @@ export default function App() {
         <DayInfo />
         <CurrentWeather />
       </div>
+      <footer>
+        Open source code by
+        <a
+          href="https://github.com/Ana-Rita95/weather-react-app"
+          target="_blank"
+        >
+          {" "}
+          Ana Rita Silva
+        </a>
+      </footer>
     </div>
   );
 }
