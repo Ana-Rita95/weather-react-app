@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
 import DayInfo from "./DayInfo";
-import WeatherDetail from "./WeatherDetail";
 import CurrentWeather from "./CurrentWeather";
 import axios from "axios";
 
@@ -13,12 +12,14 @@ export default function Header(props) {
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
-      humidity: response.data.main.humidity,
-      pressure: response.data.main.pressure,
+      weatherStatus: {
+        humidity: response.data.main.humidity,
+        pressure: response.data.main.pressure,
+        wind: response.data.wind.speed
+      },
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
-      wind: response.data.wind.speed,
       city: response.data.name
     });
   }
@@ -64,7 +65,6 @@ export default function Header(props) {
         </header>
         <DayInfo data={weatherData} />
         <CurrentWeather info={weatherData} />
-        <WeatherDetail detail={weatherData} />
       </div>
     );
   } else {
