@@ -9,7 +9,9 @@ export default function DayInfo(props) {
         <span className="city"> {props.data.city}</span>
       </h4>
       <h6 className="timeDate">Last updated at: sunday, 19:00</h6>
-      <h6 className="weatherStatus">{props.data.description}</h6>
+      <h6 className="weatherStatus text-capitalize">
+        {props.data.description}
+      </h6>
     </div>
   );
 }
