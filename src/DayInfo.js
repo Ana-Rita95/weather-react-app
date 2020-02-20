@@ -21,7 +21,6 @@ export default function DayInfo(props) {
     minutes = `0$minutes`;
   }
   return (
-    //Não esquecer que falta alterar o greeting
     <div className="dayInfo">
       <h4>
         <span className="greeting">
