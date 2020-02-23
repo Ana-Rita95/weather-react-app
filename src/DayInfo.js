@@ -18,7 +18,7 @@ export default function DayInfo(props) {
   }
   let minutes = props.data.date.getMinutes();
   if (minutes < 10) {
-    minutes = `0$minutes`;
+    minutes = `0${minutes}`;
   }
   return (
     <div className="dayInfo">

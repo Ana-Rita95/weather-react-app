@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CurrentWeather.css";
 import WeatherDetail from "./WeatherDetail";
+import WeatherIcon from "./WeatherIcon";
 
 export default function CurrentWeather(props) {
   const [unit, setUnit] = useState("celsius");
@@ -23,7 +24,7 @@ export default function CurrentWeather(props) {
       <div className="currentWeather">
         <div className="row">
           <div className="col-2">
-            <img src={props.info.iconUrl} alt={props.info.description} />
+            <WeatherIcon code={props.info.icon} />
           </div>
           <div className="col-1 currentTemperature float-left">
             {Math.round(props.info.temperature)}
@@ -46,7 +47,7 @@ export default function CurrentWeather(props) {
       <div className="currentWeather">
         <div className="row">
           <div className="col-2">
-            <i className="fas fa-wind" />
+            <WeatherIcon code={props.info.icon} />
           </div>
           <div className="col-1 currentTemperature float-left">
             {Math.round(fahrenheit())}
