@@ -23,7 +23,7 @@ export default function CurrentWeather(props) {
       <div className="currentWeather">
         <div className="row">
           <div className="col-2">
-            <i className="fas fa-wind" />
+            <img src={props.info.iconUrl} alt={props.info.description} />
           </div>
           <div className="col-1 currentTemperature float-left">
             {Math.round(props.info.temperature)}
