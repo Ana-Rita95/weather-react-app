@@ -21,7 +21,6 @@ export default function Header(props) {
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
       city: response.data.name
     });
   }
