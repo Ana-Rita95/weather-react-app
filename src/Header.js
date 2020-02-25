@@ -3,6 +3,7 @@ import "./Header.css";
 import DayInfo from "./DayInfo";
 import CurrentWeather from "./CurrentWeather";
 import axios from "axios";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Header(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -66,6 +67,7 @@ export default function Header(props) {
         </header>
         <DayInfo data={weatherData} />
         <CurrentWeather info={weatherData} />
+        <WeatherForecast city={weatherData.city} />
       </div>
     );
   } else {
